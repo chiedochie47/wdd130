@@ -25,11 +25,11 @@ header, main, footer {
 
 h1, h2 {
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  color: #000;
 }
 
 h2 {
-  background-color: var(--accent2-color);
+  background-color: darkgoldenrod;
 }
 
 nav, p, section, article {
@@ -105,14 +105,14 @@ header nav {
 }
 
 header nav a {
-  color: var(--accent2-color);
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 0.95rem;
 }
 
 header nav a:hover {
-  color: var(--secondary-color);
+  color: #bdbdbd
 }
 
 footer {
@@ -124,6 +124,8 @@ footer {
 
 footer p {
   margin: 0 0 8px 0;
+  color: red;
+  font-weight: bold;
 }
 
 .socialmedia {
