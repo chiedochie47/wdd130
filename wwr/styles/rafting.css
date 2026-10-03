@@ -25,11 +25,12 @@ header, main, footer {
 
 h1, h2 {
   font-family: var(--heading-font);
-  color: #000;
+  color: #f0fdf4;
 }
 
 h2 {
   background-color: var(--primary-color);
+  text-align: center;
 }
 
 nav, p, section, article {
