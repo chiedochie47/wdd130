@@ -19,8 +19,8 @@ body {
 }
 
 header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 
 h1, h2 {
@@ -35,10 +35,6 @@ h2 {
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -60,6 +56,7 @@ nav, p, section, article {
   opacity: 0.7;
   background-color: var(--accent1-color);
   color: #fff; /* white text – make sure there is enough contrast with the background-color */
+  margin: 0;
 }
 
 .hero article {
@@ -68,7 +65,7 @@ nav, p, section, article {
     left: 20px;
     right: 20px;
     background-color: var(--accent2-color);
-    opacity: 0.92;
+    margin: 0;
     border-radius: 4px;
     padding: 12px;
 }
@@ -85,23 +82,62 @@ nav, p, section, article {
   height: 125px;
   margin: 0 0 8px 12px;
   border: 3px solid var(--secondary-color);
-  border-radius: 50%;
+}
+
+main section {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+main section:last-child {
+  border-bottom: none;
+}
+
+.history {
+  max-width: 800px;
+  margin: 16px auto;
+}
+
+.history p {
+  margin: 8px 0 0 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
+  column-gap: 20px;
   background-color: var(--primary-color);
   color: var(--accent2-color);
   padding: 10px 16px;
 }
 
+header img {
+  display: block;
+  height: 50px;
+  width: auto;
+}
+
 header nav {
   display: flex;
-  gap: 20px;
   margin: 0;
   padding: 0;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+header nav ul li{
+  flex: 1 1 auto;
+
 }
 
 header nav a {
@@ -116,6 +152,11 @@ header nav a:hover {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   background-color: var(--primary-color);
   color: var(--accent2-color);
   text-align: center;
@@ -126,17 +167,29 @@ footer p {
   margin: 0 0 8px 0;
   color: red;
   font-weight: bold;
+  text-align: center;
+}
+
+footer .copyright {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
 }
 
 .socialmedia {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 16px;
   margin: 0;
   padding: 0;
 }
 
+.socialmedia a {
+  text-decoration: none;
+}
+
 .socialmedia img {
+  display: block;
   width: 32px;
   height: 32px;
 }
