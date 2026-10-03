@@ -29,7 +29,7 @@ h1, h2 {
 }
 
 h2 {
-  background-color: darkgoldenrod;
+  background-color: var(--primary-color);
 }
 
 nav, p, section, article {
